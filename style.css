@@ -1,0 +1,60 @@
+.titleSection{
+  display:flex;
+  height: 6em;
+  align-items: center;
+  background: grey;
+  padding: 2em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  margin-bottom:1em;
+  
+}
+
+.headerSection{
+  display: grid;
+  grid-template-rows: 2;
+  grid-row-gap: 2em;
+  margin:1em;
+  justify-items: center;
+  background: grey;
+  padding:1em;
+  
+}
+
+.header2Container{
+  margin:1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding:1em;
+
+  background: grey;
+}
+
+.cardViewContainer{
+  margin: 2em;
+  width: 100%;
+}
+
+
+.cardViewSection{
+  display: grid;
+  grid-template-rows: 2;
+  margin:1em;
+  background: lightgrey;
+  
+}
+.extraSection{
+  display: grid;
+  grid-template-rows: 2;
+  grid-row-gap: 2em;
+  margin:1em;
+  justify-items: center;
+  background: grey;
+  padding:1em;
+  
+}
+footer{
+  height: 6em;
+  background:grey;
+
+}
