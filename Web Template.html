@@ -1,94 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>EA Creative</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <title>EA Creative</title>
-</head>
+  <body>
+    <header>
+      <section class="titleSection">
+        <h1 class="titletxt display-2">Title</h1>
+      </section>
+    </header>
 
-<body>
-  <Header>
-    <section class="titleSection">
-      <h1 class="titletxt display-2 ">Title</h1>
+    <section class="headerSection">
+      <div class="introductionHeaderContainer">
+        <h3 class="display-4">
+          Header
+        </h3>
+      </div>
+      <div class="introductionContainer">
+        <p class="introductiontxt">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+          fringilla, sapien a tempor molestie, dui ipsum malesuada mauris, ut
+          iaculis massa felis non quam. Duis dignissim semper ante at dignissim.
+          In pretium mauris id risus dapibus luctus. Sed varius venenatis ligula
+          ac pharetra. Mauris volutpat dui eu purus imperdiet accumsan. Nam
+          neque libero, dictum at accumsan a, rutrum eu nisi. Nulla vitae ipsum
+          felis.
+        </p>
+      </div>
     </section>
-  </Header>
-
-  <section class="headerSection">
-    <div class="introductionHeaderContainer">
-      <h3 class="display-4">
-        Header
-      </h3>
-    </div>
-    <div class="introductionContainer">
-      <p class="introductiontxt">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla, sapien a tempor molestie, dui ipsum
-        malesuada mauris, ut iaculis massa felis non quam. Duis dignissim semper ante at dignissim. In pretium mauris id
-        risus dapibus luctus. Sed varius venenatis ligula ac pharetra. Mauris volutpat dui eu purus imperdiet accumsan.
-        Nam neque libero, dictum at accumsan a, rutrum eu nisi. Nulla vitae ipsum felis. 
-      </p>
-    </div>
-  </section>
-  <section class=cardViewSection>
-    <div class="header2Container">
-      <h3 class="header2txt display-4" style="font-size: 2em;">
-        Header 2
-      </h3>
-    </div>
-    <div class="cardViewContainer">
-      <div class="card card1">
-        <div class="card-header">
-          <h4 class="cardViewHeader">
-            Card Header
-          </h4>
-        </div>
-        <div class="card-body cardBody">
-          <div class = "imageContainer">
-            <img src="img1.jpg">
-            <img src="img2.jpeg">
-            <img src="img3.jpeg">
+    <section class="cardViewSection">
+      <div class="header2Container">
+        <h3 class="header2txt display-4" style="font-size: 2em;">
+          Header 2
+        </h3>
+      </div>
+      <div class="cardViewContainer">
+        <div class="card card1">
+          <div class="card-header">
+            <h4 class="cardViewHeader">
+              Card Header
+            </h4>
+          </div>
+          <div class="card-body cardBody">
+            <!--Carousel Wrapper-->
+            <div
+              id="carousel-example-2"
+              class="carousel slide carousel-fade z-depth-1-half"
+              data-ride="carousel"
+            >
+              <!--Indicators-->
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carousel-example-2"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                <li data-target="#carousel-example-2" data-slide-to="2"></li>
+              </ol>
+              <!--/.Indicators-->
+              <!--Slides-->
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="view">
+                    <img
+                      class="d-block w-100"
+                      src="img1.jpeg"
+                      alt="First slide"
+                    />
+                    <div class="mask rgba-black-light"></div>
+                  </div>
+                  <div class="carousel-caption">
+                    <h3 class="h3-responsive">This is the first title</h3>
+                    <p>First text</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <!--Mask color-->
+                  <div class="view">
+                    <img
+                      class="d-block w-100"
+                      src="img2.jpeg"
+                      alt="Second slide"
+                    />
+                    <div class="mask rgba-black-light"></div>
+                  </div>
+                  <div class="carousel-caption">
+                    <h3 class="h3-responsive">This is the second title</h3>
+                    <p>Secondary text</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <!--Mask color-->
+                  <div class="view">
+                    <img
+                      class="d-block w-100"
+                      src="img3.jpg"
+                      alt="Third slide"
+                    />
+                    <div class="mask rgba-black-light"></div>
+                  </div>
+                  <div class="carousel-caption">
+                    <h3 class="h3-responsive">This is the third title</h3>
+                    <p>Third text</p>
+                  </div>
+                </div>
+              </div>
+              <!--/.Slides-->
+              <!--Controls-->
+              <a
+                class="carousel-control-prev"
+                href="#carousel-example-2"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carousel-example-2"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+              <!--/.Controls-->
+            </div>
+            <!--/.Carousel Wrapper-->
           </div>
         </div>
-        <div class="card-footer text-right">
-          <button class="btn">
-            Next
-          </button>
-        </div>
       </div>
-    </div>
-  </section>
-  <section class="extraSection">
-    <div class="extraHeaderContainer">
-      <h3 class="display-4">
-        Header 3
-      </h3>
-    </div>
-    <div class="extraContainer">
-      <p class="extratxt" style="font-size: large;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla, sapien a tempor molestie, dui ipsum
-        malesuada mauris, ut iaculis massa felis non quam. Duis dignissim semper ante at dignissim. In pretium mauris id
-        risus dapibus luctus. Sed varius venenatis ligula ac pharetra. Mauris volutpat dui eu purus imperdiet accumsan.
-        Nam neque libero, dictum at accumsan a, rutrum eu nisi. Nulla vitae ipsum felis. Curabitur quis justo nibh.
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam at ante id justo
-        viverra scelerisque. Pellentesque aliquet ante nec maximus feugiat. In non posuere ipsum.
-      </p>
-    </div>
-  </section>
-  <Footer>
-  </Footer>
-  <script src="main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
-</body>
-
+    </section>
+    <section class="extraSection">
+      <div class="extraHeaderContainer">
+        <h3 class="display-4">
+          Header 3
+        </h3>
+      </div>
+      <div class="extraContainer">
+        <p class="extratxt" style="font-size: large;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+          fringilla, sapien a tempor molestie, dui ipsum malesuada mauris, ut
+          iaculis massa felis non quam. Duis dignissim semper ante at dignissim.
+          In pretium mauris id risus dapibus luctus. Sed varius venenatis ligula
+          ac pharetra. Mauris volutpat dui eu purus imperdiet accumsan. Nam
+          neque libero, dictum at accumsan a, rutrum eu nisi. Nulla vitae ipsum
+          felis. Curabitur quis justo nibh. Class aptent taciti sociosqu ad
+          litora torquent per conubia nostra, per inceptos himenaeos. Nam at
+          ante id justo viverra scelerisque. Pellentesque aliquet ante nec
+          maximus feugiat. In non posuere ipsum.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <section class="footerSection">
+        <h1 class="titletxt display-2">Footer</h1>
+      </section>
+    </footer>
+    <script src="main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

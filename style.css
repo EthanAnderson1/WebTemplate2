@@ -97,13 +97,13 @@
 }
 
 @keyframes increaseWidth{
-  from{width:80%;}
+  from{width:85%;}
   to{width:90%;}
 }
 
 @keyframes decreaseWidth{
   from{width:90%;}
-  to{width:80%;}
+  to{width:85%;}
 }
 
 .titleSection {
@@ -133,7 +133,7 @@
   display: grid;
   grid-template-rows: 2;
   grid-row-gap: 2em;
-  margin: 1em;
+  margin: 8em;
   justify-items: center;
   background: rgba(0, 0, 0, 0);
   padding: 1em;
@@ -170,15 +170,15 @@
 }
 
 .card1 {
-  width: 80%;
+  width: 85%;
   margin-right:4em;
   animation-name:decreaseWidth;
-  animation-duration: 0.2s;
+  animation-duration: 0.4s;
 }
 
 .card1:hover{
   animation-name:increaseWidth;
-  animation-duration: 0.2s;
+  animation-duration: 0.4s;
   animation-fill-mode: forwards;
   
 }
@@ -187,28 +187,40 @@
   background: rgba(0, 0, 0, 0.1);
 }
 
-.imageContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
 .extraSection {
   display: grid;
   grid-template-rows: 2;
   grid-row-gap: 2em;
   margin: 1em;
-  margin-top: 4.5em;
+  margin-top: 10em;
   margin-bottom: 4.5em;
   justify-items: center;
   background: rgba(0, 0, 0, 0);
   padding: 1em;
   color: white;
 }
-footer {
+.footerSection {
+  display: flex;
   height: 6em;
-  background: rgba(0, 0, 0, 0);
+  align-items: center;
+  justify-content: end;
+  padding: 2em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  margin-top: 1em;
+  color: white;
+
+  animation-name: goldToClear, shiftTitleBack;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+
+}
+
+.footerSection:hover {
+  animation-name: clearToGold, shiftTitle;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
 }
 
 body {
@@ -218,5 +230,5 @@ body {
   background-size: 100%;
 }
 img{
-  width: 30%;
+  max-height: 25em;
 }
