@@ -9,29 +9,29 @@
   25% {
     background: linear-gradient(
       to bottom right,
-      rgba(248, 101, 33, 0.1), 10%,
-      rgba(248, 101, 33, 0.025)
+      rgba(248, 101, 33, 0.05), 10%,
+      rgba(248, 101, 33, 0.0175)
     );
   }
   50% {
     background: linear-gradient(
       to bottom right,
-      rgba(248, 101, 33, 0.2), 10%,
-      rgba(248, 101, 33, 0.05)
+      rgba(248, 101, 33, 0.1), 10%,
+      rgba(248, 101, 33, 0.025)
     );
   }
   75% {
     background: linear-gradient(
       to bottom right,
-      rgba(248, 101, 33, 0.3), 10%,
-      rgba(248, 101, 33, 0.075)
+      rgba(248, 101, 33, 0.15), 10%,
+      rgba(248, 101, 33, 0.0335)
     );
   }
   100% {
     background: linear-gradient(
       to bottom right,
-      rgba(248, 101, 33, 0.4), 10%,
-      rgba(248, 101, 33, 0.1)
+      rgba(248, 101, 33, 0.2), 10%,
+      rgba(248, 101, 33, 0.05)
     );
   }
 }
@@ -39,29 +39,29 @@
   0% {
     background: linear-gradient(
       to bottom right,
-      rgba(248, 101, 33, 0.4), 10%,
-      rgba(248, 101, 33, 0.1)
+      rgba(248, 101, 33, 0.2), 10%,
+      rgba(248, 101, 33, 0.05)
     );
   }
   25% {
     background: linear-gradient(
       to bottom right,
-      rgba(248, 101, 33, 0.3), 10%,
-      rgba(248, 101, 33, 0.075)
+      rgba(248, 101, 33, 0.15), 10%,
+      rgba(248, 101, 33, 0.0335)
     );
   }
   50% {
     background: linear-gradient(
       to bottom right,
-      rgba(248, 101, 33, 0.2), 10%,
-      rgba(248, 101, 33, 0.05)
+      rgba(248, 101, 33, 0.1), 10%,
+      rgba(248, 101, 33, 0.025)
     );
   }
   75% {
     background: linear-gradient(
       to bottom right,
-      rgba(248, 101, 33, 0.1), 10%,
-      rgba(248, 101, 33, 0.025)
+      rgba(248, 101, 33, 0.05), 10%,
+      rgba(248, 101, 33, 0.0175)
     );
   }
   100% {
@@ -74,75 +74,37 @@
 }
 
 @keyframes shiftTitle {
-  0% {
+  from {
     padding-left: 2em;
   }
-  20% {
-    padding-left: 2.2em;
-  }
-  40% {
-    padding-left: 2.4em;
-  }
-  60% {
-    padding-left: 2.6em;
-  }
-  80% {
-    padding-left: 2.8em;
-  }
-  100% {
+  to {
     padding-left: 3em;
   }
 }
 
 @keyframes shiftTitleBack {
-  0% {
+  from {
     padding-left: 3em;
   }
-  20% {
-    padding-left: 2.8em;
-  }
-  40% {
-    padding-left: 2.6em;
-  }
-  60% {
-    padding-left: 2.4em;
-  }
-  80% {
-    padding-left: 2.2em;
-  }
-  100% {
+  to {
     padding-left: 2em;
   }
 }
 
 @keyframes enlargeIntroText{
-  0%{font-size:1.4em;}
-  25%{font-size: 1.45em;}
-  50%{font-size: 1.45em;}
-  75%{font-size: 1.45em;}
-  100%{font-size: 1.45em;}
+  from{font-size:1.4em;}
+  to{font-size: 1.45em;}
 }
 
 @keyframes increaseWidth{
-  0%{width:80%;}
-  25%{width:82.5%;}
-  50%{width:85%;}
-  75%{width:87.5%;}
-  100%{width:90%;}
+  from{width:80%;}
+  to{width:90%;}
 }
 
 @keyframes decreaseWidth{
-  0%{width:90%;}
-  25%{width:87.5%;}
-  50%{width:85%;}
-  75%{width:82.5%;}
-  100%{width:80%;}
+  from{width:90%;}
+  to{width:80%;}
 }
-  
-  
- 
-  
-  
 
 .titleSection {
   display: flex;
@@ -187,7 +149,7 @@
   display: grid;
   grid-template-rows: 2;
   margin: 1em;
-  background: rgba(150, 150, 150, 0.3);
+  background: rgba(150, 150, 150,0.3);
 }
 
 .header2Container {
@@ -195,7 +157,7 @@
   margin-top: 1em;
   margin-bottom: 1em;
   padding: 1em;
-  background: grey;
+  background: rgba(150, 150, 150,0.5);
   color: white;
 }
 
